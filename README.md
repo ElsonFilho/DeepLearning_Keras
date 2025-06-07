@@ -1,4 +1,4 @@
-# DeepLearning_Keras
+# Deep Learning with Keras
 
 ## An introduction to Deep Learning &amp; Neural Networks with Keras
 
