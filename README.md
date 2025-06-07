@@ -1,5 +1,6 @@
 # DeepLearning_Keras
-An introduction to Deep Learning &amp; Neural Networks with Keras.
+
+## An introduction to Deep Learning &amp; Neural Networks with Keras.
 
 This repository provides a practical introduction to the foundational concepts of deep learning, using Keras to illustrate how to build and train neural networks effectively. It covers essential topics such as gradient descent, backpropagation, activation functions, and data preparation for classification tasks.
 
