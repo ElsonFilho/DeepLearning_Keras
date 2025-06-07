@@ -1,6 +1,6 @@
 # DeepLearning_Keras
 
-## An introduction to Deep Learning &amp; Neural Networks with Keras.
+## An introduction to Deep Learning &amp; Neural Networks with Keras
 
 This repository provides a practical introduction to the foundational concepts of deep learning, using Keras to illustrate how to build and train neural networks effectively. It covers essential topics such as gradient descent, backpropagation, activation functions, and data preparation for classification tasks.
 
@@ -74,3 +74,59 @@ Once prepared, the data can be fed into Keras models to build and train deep lea
 📘 Notebook: [Intro to Keras](https://github.com/ElsonFilho/DeepLearning_Keras/blob/main/notebooks/Keras_Intro.ipynb)
 
 ---
+
+## Deep Learning Models
+
+### Shallow vs. Deep Neural Networks
+- **Shallow Neural Networks**: One hidden layer; only accept vector inputs.
+- **Deep Neural Networks**: Multiple hidden layers; can process raw data like images and text.
+- **Rise of Deep Learning** driven by: algorithmic advancements, large data availability, and powerful hardware (e.g., GPUs).
+  
+---
+
+### Convolutional Neural Networks (CNNs)
+- Designed specifically for image-related tasks (e.g., recognition, object detection).
+- Input shapes: 
+  - Grayscale: `(n x m x 1)`
+  - RGB/Color: `(n x m x 3)`
+- Layers:
+  - **Convolutional Layer**: Applies filters (kernels) to extract features.
+  - **ReLU Activation**: Keeps positive values, zeroes out negatives.
+  - **Pooling Layer**: Reduces spatial dimensions (Max Pooling, Avg Pooling).
+  - **Fully Connected Layer**: Flattens feature maps and connects to output.
+
+📘 Notebook: [CNNs with Keras](https://github.com/ElsonFilho/DeepLearning_Keras/blob/main/notebooks/CNN_Keras.ipynb)
+
+---
+
+
+### Recurrent Neural Networks (RNNs)
+- Handle **sequential data** by incorporating past outputs into current inputs.
+- Suitable for tasks like:
+  - Text & speech processing
+  - Time series prediction
+  - Handwriting and genome analysis
+- **LSTM (Long Short-Term Memory)**: A type of RNN that captures long-term dependencies. Used for:
+  - Image captioning
+  - Handwriting/image generation
+  - Video description
+  
+---
+
+### Transformers
+- Handle **sequential data** using **self-attention**, not recurrence.
+- Capture relationships between all tokens in a sequence simultaneously.
+- Enable highly parallelizable and scalable training.
+- Foundation of modern NLP models like **BERT**, **GPT**, and **T5**.
+- Used in tasks such as language translation, summarization, and question answering.
+
+📘 Notebook: [Transformers with Keras](https://github.com/ElsonFilho/DeepLearning_Keras/blob/main/notebooks/Transformers_Keras.ipynb)
+
+---
+
+### Autoencoders & RBMs
+- **Autoencoders**: Unsupervised models for data compression and reconstruction.
+  - Encoder compresses input; decoder reconstructs it.
+  - Applications: noise removal, dimensionality reduction, data visualization.
+- **Restricted Boltzmann Machines (RBMs)**:
+  - Used for feature extraction, handling imbalanced data, estimating missing values.
